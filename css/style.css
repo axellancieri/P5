@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1rem;
+  margin: 0;
+}
+
+header {
+  padding: 1rem 1rem 2rem;
+}
+
+#searchbar {
+  display: block;
+  margin: auto;
+  padding: 1rem;
+  width: 50%;
+  outline: none;
+  border: 2px inset rgba(188, 186, 186, 0.425);
+  border-radius: 0.5rem;
+}
+#searchbar:target, #searchbar:focus {
+  border: 2px inset rgba(188, 186, 186, 0.975);
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(auto-fill, minmax(1fr));
+  grid-gap: 2rem;
+}
+
+.images {
+  display: flex;
+  margin: auto;
+}
+
+/*# sourceMappingURL=style.css.map */
