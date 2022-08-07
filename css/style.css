@@ -12,7 +12,7 @@ header {
   padding: 1rem 1rem 2rem;
 }
 
-#searchbar {
+#search {
   display: block;
   margin: auto;
   padding: 1rem;
@@ -21,7 +21,7 @@ header {
   border: 2px solid rgba(188, 186, 186, 0.425);
   border-radius: 0.5rem;
 }
-#searchbar:target, #searchbar:focus {
+#search:target, #search:focus {
   border: 2px inset rgba(188, 186, 186, 0.975);
   border-radius: 0.5rem;
   outline: none;
@@ -29,13 +29,15 @@ header {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 200px));
-  grid-template-rows: repeat(auto-fill, minmax(200px, 200px));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 2rem;
+  grid-auto-rows: 1fr;
 }
 
 .images {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 .images img {
