@@ -1,14 +1,3 @@
-let i;
-let l;
-
-function eachPic(arr) {
-    let images = ``;
-     for (l = 0;  l < arr.length; l++) {
-         images = arr[i];
-     }
-     return images;
- }
-
 const picturesAlt = [
     'Hay Bales',
     'Lake',
@@ -70,30 +59,21 @@ const pictureDataCap = [
     'I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.'
 ];
 
+
 let html = '';  
 
-for (i = 0; i < 12; i++) {  
+for (let i = 0; i < 12; i++) {  
     html += `
-    <div class="images">
-    <a href="${eachPic(pictureHref)}" data-caption="${eachPic(pictureDataCap)}">
-        <img src="${eachPic(picturesSrc)}" alt="${eachPic(picturesAlt)}">
-    </a>         
-    </div>
+        <div class="images">
+        <a href="${pictureHref[i]}" data-caption="${pictureDataCap[i]}">
+            <img src="${picturesSrc[i]}" alt="${picturesAlt[i]}">
+        </a>         
+        </div>
     `;
 }
 
 document.querySelector('main').innerHTML = `
-<div class="container gallery">
-    ${html}            
-</div>`;
-
-
-
-
-
-// let htmlBlocks;
-
-// let htmlCount;
-// for (x=0;x=) {
-
-// }
+    <div class="container gallery">
+        ${html}            
+    </div>
+`;

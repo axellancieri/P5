@@ -3,11 +3,11 @@ document.getElementById('search').addEventListener('keyup', searchbar);
 function searchbar() { 
     let input, inputCaps, images, imagesCaps; // div, x, a, txtValue;
     input = document.getElementById(`search`);
-    input.value = input.value.toUpperCase();
+    input.value = input.value.toLowerCase();
     inputCaps = input.value;
     let filter = document.getElementsByClassName('images');
     for (let i = 0; i < filter.length; i++) { 
-        if (!filter[i].innerHTML.toUpperCase().includes(inputCaps)) {
+        if (!filter[i].innerHTML.toLowerCase().includes(inputCaps)) {
             filter[i].style.display="none";
         }
         else {
