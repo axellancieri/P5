@@ -5,13 +5,28 @@ function searchbar() {
     input = document.getElementById(`search`);
     input.value = input.value.toUpperCase();
     inputCaps = input.value;
-    let x = document.getElementsByClassName('images');
-    for (let i = 0; i < x.length; i++) { 
-        if (!x[i].innerHTML.toUpperCase().includes(inputCaps)) {
-            x[i].style.display="none";
+    let filter = document.getElementsByClassName('images');
+    for (let i = 0; i < filter.length; i++) { 
+        if (!filter[i].innerHTML.toUpperCase().includes(inputCaps)) {
+            filter[i].style.display="none";
         }
         else {
-            x[i].style.display="flex";                 
+            filter[i].style.display="flex";                 
         }
     }
 }
+
+
+/* Used given link to get a better understanding of the elementsByClassName method that was giving me a hard time as I didnt realize with include it would automatically target the alt attribute
+
+ https:www.geeksforgeeks.org/search-bar-using-html-css-and-javascript/
+
+*/
+
+
+
+
+
+
+
+
