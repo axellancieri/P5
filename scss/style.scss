@@ -1,52 +1,7 @@
-// BASE
-* {
-    box-sizing: border-box;
-}
+@import 'base/base.scss',
+        'searchbar/searchbar.scss',
+        'grid/grid.scss',
+        'images/images.scss';
 
-body {
-    padding: 1rem;
-    margin: auto;
-    max-width: 940px;
 
-}
-
-header {
-    padding: 1rem 1rem 2rem;
-}
-
-#search {
-    display: block;
-    margin: auto;
-    padding: 1rem;
-    width: 65%;
-    outline: none;
-    border: 2px solid rgba(188, 186, 186, 0.425);
-    border-radius: .5rem;
-        &:target, &:focus {
-            border: 2px inset rgba(188, 186, 186, 0.975);
-            border-radius: .5rem;
-            outline: none;
-        }
-
-}
-// GRID
-
-.container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 2rem;
-    grid-auto-rows: 1fr;
-}
-
-// IMAGES
-
-.images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    & img {
-        width: 100%;  
-    }
-    
-}
+        

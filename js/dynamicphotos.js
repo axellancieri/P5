@@ -1,3 +1,14 @@
+let i;
+let l;
+
+function eachPic(arr) {
+    let images = ``;
+     for (l = 0;  l < arr.length; l++) {
+         images = arr[i];
+     }
+     return images;
+ }
+
 const picturesAlt = [
     'Hay Bales',
     'Lake',
@@ -59,15 +70,7 @@ const pictureDataCap = [
     'I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.'
 ];
 
-const eachPic = function(arr) {
-   let images = ``;
-    for (l = 0;  l < arr.length; l++) {
-        images = arr[i];
-    }
-    return images;
-}
-
-let html = '';
+let html = '';  
 
 for (i = 0; i < 12; i++) {  
     html += `
@@ -76,13 +79,8 @@ for (i = 0; i < 12; i++) {
         <img src="${eachPic(picturesSrc)}" alt="${eachPic(picturesAlt)}">
     </a>         
     </div>
-    `
+    `;
 }
-
-
-
-
-
 
 document.querySelector('main').innerHTML = `
 <div class="container gallery">
@@ -93,4 +91,9 @@ document.querySelector('main').innerHTML = `
 
 
 
-// ${eachPic(picturesAlt)
+// let htmlBlocks;
+
+// let htmlCount;
+// for (x=0;x=) {
+
+// }

@@ -5,7 +5,7 @@
 body {
   padding: 1rem;
   margin: auto;
-  max-width: 940px;
+  max-width: 1024px;
 }
 
 header {
@@ -16,32 +16,29 @@ header {
   display: block;
   margin: auto;
   padding: 1rem;
-  width: 65%;
+  width: 57%;
   outline: none;
   border: 2px solid rgba(188, 186, 186, 0.425);
   border-radius: 0.5rem;
 }
 #search:target, #search:focus {
-  border: 2px inset rgba(188, 186, 186, 0.975);
+  border: 2px solid rgba(188, 186, 186, 0.975);
   border-radius: 0.5rem;
   outline: none;
 }
 
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 228px));
   grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 2rem;
+  grid-gap: 1.5rem 0;
   grid-auto-rows: 1fr;
+  place-items: center;
+  justify-content: center;
 }
 
 .images {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-.images img {
-  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

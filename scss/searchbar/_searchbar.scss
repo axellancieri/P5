@@ -1,0 +1,15 @@
+#search {
+    display: block;
+    margin: auto;
+    padding: 1rem;
+    width: 57%;
+    outline: none;
+    border: 2px solid rgba(188, 186, 186, 0.425);
+    border-radius: 0.5rem;
+        &:target, &:focus {
+            border: 2px solid rgba(188, 186, 186, 0.975);
+            border-radius: .5rem;
+            outline: none;
+        }
+
+}
